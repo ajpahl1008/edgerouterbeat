@@ -1,0 +1,5 @@
+= Edgerouterbeat Docs
+
+Welcome to the Edgerouterbeat documentation.
+
+
