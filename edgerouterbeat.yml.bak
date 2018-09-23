@@ -4,7 +4,7 @@
 
 edgerouterbeat:
   # Defines how often an event is sent to the output
-  period: 1s
+  period: 15s
 
 #================================ General =====================================
 
@@ -20,6 +20,11 @@ edgerouterbeat:
 # output.
 #fields:
 #  env: staging
+
+# Default templates in a json file for setup
+setup.template.json.enabled: true
+setup.template.json.path: "edgerouterbeat.template.json"
+setup.template.json.name: "edgerouter-template"
 
 
 #============================== Dashboards =====================================

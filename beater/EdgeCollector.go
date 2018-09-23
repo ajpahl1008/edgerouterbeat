@@ -31,8 +31,8 @@ type InterfaceCondensed struct {
 
 func CollectEdgeStats() InterfacesCondensed {
 
-	//input, err := exec.Command("/opt/vyatta/bin/vyatta-op-cmd-wrapper","show","interfaces","counters").CombinedOutput()
-	input, err := exec.Command("cat","/Users/aj/Development/Go/src/examples/sample.header").CombinedOutput()
+	input, err := exec.Command("/opt/vyatta/bin/vyatta-op-cmd-wrapper","show","interfaces","counters").CombinedOutput()
+	//input, err := exec.Command("cat","/Users/aj/Development/Go/src/examples/sample.header").CombinedOutput()
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -91,6 +91,5 @@ func CollectEdgeStats() InterfacesCondensed {
 		fmt.Fprintln(os.Stderr, "reading input:", err)
 	}
 
-	//return string(jsonReturn)
 	return edgeMetrics
 }
