@@ -55,9 +55,9 @@ func (bt *Edgerouterbeat) Run(b *beat.Beat) error {
 		}
 
 		event := beat.Event{
-			Timestamp: time.Now(), //TODO: Figure out why this isn't being mapped in Elasticsearch correclty!!!
+			Timestamp: time.Now(),
 			Fields: common.MapStr{
-			    CollectEdgeStats().Interfaces[0].InterfaceName : CollectEdgeStats().Interfaces[0],
+				CollectEdgeStats().Interfaces[0].InterfaceName : CollectEdgeStats().Interfaces[0],
 				CollectEdgeStats().Interfaces[1].InterfaceName : CollectEdgeStats().Interfaces[1],
 				CollectEdgeStats().Interfaces[2].InterfaceName : CollectEdgeStats().Interfaces[2],
 				CollectEdgeStats().Interfaces[3].InterfaceName : CollectEdgeStats().Interfaces[3],

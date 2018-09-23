@@ -1,9 +1,0 @@
-- key: edgerouterbeat
-  title: edgerouterbeat
-  description:
-  fields:
-    - name: counter
-      type: long
-      required: true
-      description: >
-        PLEASE UPDATE DOCUMENTATION
