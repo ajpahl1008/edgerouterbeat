@@ -1,11 +1,17 @@
 # Edgerouterbeat
 
-Welcome to Edgerouterbeat.
+The purpose of this project is to be able to take your statistics from your Ubiquiti Edgerouter X SFP and ship the data to the Elastic Stack.  Below is an example of the dashboards we'll be able to create when you install this beat on your Edgerouter.
 
-Ensure that this folder is at the following location:
-`${GOPATH}/src/github.com/ajpahl1008/edgerouterbeat`
+![alt text](https://github.com/ajpahl1008/edgerouterbeat/blob/master/images/Dashboard.png)
+
+## Why Edgerouterbeat?
+
+With zero documented remote APIs for the Edgerouter, using a lightweight framework provided by the libbeat protocol and Elastic's beats makes gathering metrics a breeze.  The on-disk footprint is about 30MB and with a modest sample rate of 10-15 seconds, has very little impact to the routers CPU uzilization.
 
 ## Getting Started with Edgerouterbeat
+
+Ensure that this folder is at the following location:
+`${GOPATH}/src/github.com/<your_id>/edgerouterbeat`
 
 ### Requirements
 
