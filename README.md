@@ -2,7 +2,7 @@
 
 The purpose of this project is to be able to take your statistics from your Ubiquiti Edgerouter X SFP and ship the data to the Elastic Stack.  Below is an example of the dashboards we'll be able to create when you install this beat on your Edgerouter.
 
-Preview of Upcoming Dashboards
+Preview of Upcoming Dashboards (https://github.com/ajpahl1008/edgerouterbeat/issues/1)
 ![alt_text](https://github.com/ajpahl1008/edgerouterbeat/blob/master/images/Dashboard.png)
 
 
