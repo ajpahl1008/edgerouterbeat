@@ -8,7 +8,7 @@ Preview of Upcoming Dashboards (https://github.com/ajpahl1008/edgerouterbeat/iss
 
 ## Why Edgerouterbeat?
 
-With zero documented remote APIs for the Edgerouter, using a lightweight framework provided by Elastic's libbeat protocol made createing a beat and gathering metrics easy.  The on-disk footprint is about 30MB and with a modest sample rate of 10-15 seconds, has very little impact to the routers CPU uzilization.
+With zero documented remote APIs for the Edgerouter, using a lightweight framework provided by Elastic's libbeat protocol made creating a beat and gathering metrics easy.  The on-disk footprint is about 30MB and with a modest sample rate of 10-15 seconds, has very little impact to the routers CPU uzilization.
 
 
 ## Getting Started with Edgerouterbeat
