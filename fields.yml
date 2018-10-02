@@ -36,26 +36,236 @@
         Arbitrary tags that can be set per Beat and per transaction
         type.
 
-    - name: fields
-      type: object
+    - name: eth0.interfaceName
+      type: string
       object_type: keyword
       description: >
-        Contains user configurable fields.
+        Edgerouter X Interface 0
 
-    - name: error
-      type: group
+    - name: eth0.receiveBytes
+      type: float
       description: >
-        Error fields containing additional info in case of errors.
-      fields:
-        - name: message
-          type: text
-          description: >
-            Error message.
-        - name: code
-          type: long
-          description: >
-            Error code.
-        - name: type
-          type: keyword
-          description: >
-            Error type.
+        Edgerouter X Interface 0 Bytes Received
+
+    - name: eth0.receivePackets
+      type: float
+      description: >
+        Edgerouter X Interface 0 Packets Received
+
+    - name: eth0.transmitBytes
+      type: float
+      description: >
+        Edgerouter X Interface 0 Bytes Transmitted
+
+    - name: eth0.transmitPackets
+      type: float
+      description: >
+        Edgerouter X Interface 0 Packets Transmitted
+
+    - name: eth1.interfaceName
+      type: string
+      object_type: keyword
+      description: >
+        Edgerouter X Interface 1
+
+    - name: eth1.receiveBytes
+      type: float
+      description: >
+        Edgerouter X Interface 1 Bytes Received
+
+    - name: eth1.receivePackets
+      type: float
+      description: >
+        Edgerouter X Interface 1 Packets Received
+
+    - name: eth1.transmitBytes
+      type: float
+      description: >
+        Edgerouter X Interface 1 Bytes Transmitted
+
+    - name: eth1.transmitPackets
+      type: float
+      description: >
+        Edgerouter X Interface 1 Packets Transmitted
+
+    - name: eth2.interfaceName
+      type: string
+      object_type: keyword
+      description: >
+        Edgerouter X Interface 2
+
+    - name: eth2.receiveBytes
+      type: float
+      description: >
+        Edgerouter X Interface 2 Bytes Received
+
+    - name: eth2.receivePackets
+      type: float
+      description: >
+        Edgerouter X Interface 2 Packets Received
+
+    - name: eth2.transmitBytes
+      type: float
+      description: >
+        Edgerouter X Interface 2 Bytes Transmitted
+
+    - name: eth2.transmitPackets
+      type: float
+      description: >
+        Edgerouter X Interface 2 Packets Transmitted
+
+    - name: eth3.interfaceName
+      type: string
+      object_type: keyword
+      description: >
+        Edgerouter X Interface 3
+
+    - name: eth3.receiveBytes
+      type: float
+      description: >
+        Edgerouter X Interface 3 Bytes Received
+
+    - name: eth3.receivePackets
+      type: float
+      description: >
+        Edgerouter X Interface 3 Packets Received
+
+    - name: eth3.transmitBytes
+      type: float
+      description: >
+        Edgerouter X Interface 3 Bytes Transmitted
+
+    - name: eth3.transmitPackets
+      type: float
+      description: >
+        Edgerouter X Interface 3 Packets Transmitted
+
+    - name: eth4.interfaceName
+      type: string
+      object_type: keyword
+      description: >
+        Edgerouter X Interface 4
+
+    - name: eth4.receiveBytes
+      type: float
+      description: >
+        Edgerouter X Interface 4 Bytes Received
+
+    - name: eth4.receivePackets
+      type: float
+      description: >
+        Edgerouter X Interface 4 Packets Received
+
+    - name: eth4.transmitBytes
+      type: float
+      description: >
+        Edgerouter X Interface 4 Bytes Transmitted
+
+    - name: eth4.transmitPackets
+      type: float
+      description: >
+        Edgerouter X Interface 4 Packets Transmitted
+
+    - name: ifb_eth2.interfaceName
+      type: string
+      object_type: keyword
+      description: >
+        Edgerouter X Interface ifb_eth2
+
+    - name: ifb_eth2.receiveBytes
+      type: float
+      description: >
+        Edgerouter X Interface ifb_eth2 Bytes Received
+
+    - name: ifb_eth2.receivePackets
+      type: float
+      description: >
+        Edgerouter X Interface ifb_eth2 Packets Received
+
+    - name: ifb_eth2.transmitBytes
+      type: float
+      description: >
+        Edgerouter X Interface ifb_eth2 Bytes Transmitted
+
+    - name: ifb_eth2.transmitPackets
+      type: float
+      description: >
+        Edgerouter X Interface ifb_eth2 Packets Transmitted
+
+    - name: imq0.interfaceName
+      type: string
+      object_type: keyword
+      description: >
+        Edgerouter X Interface imq0
+
+    - name: imq0.receiveBytes
+      type: float
+      description: >
+        Edgerouter X Interface imq0 Bytes Received
+
+    - name: imq0.receivePackets
+      type: float
+      description: >
+        Edgerouter X Interface imq0 Packets Received
+
+    - name: imq0.transmitBytes
+      type: float
+      description: >
+        Edgerouter X Interface imq0 Bytes Transmitted
+
+    - name: imq0.transmitPackets
+      type: float
+      description: >
+        Edgerouter X Interface imq0 Packets Transmitted
+
+    - name: lo.interfaceName
+      type: string
+      object_type: keyword
+      description: >
+        Edgerouter X Interface lo
+
+    - name: lo.receiveBytes
+      type: float
+      description: >
+        Edgerouter X Interface lo Bytes Received
+
+    - name: lo.receivePackets
+      type: float
+      description: >
+        Edgerouter X Interface lo Packets Received
+
+    - name: lo.transmitBytes
+      type: float
+      description: >
+        Edgerouter X Interface lo Bytes Transmitted
+
+    - name: lo.transmitPackets
+      type: float
+      description: >
+        Edgerouter X Interface lo Packets Transmitted
+
+    - name: switch0.interfaceName
+      type: string
+      object_type: keyword
+      description: >
+        Edgerouter X Interface switch0
+
+    - name: switch0.receiveBytes
+      type: float
+      description: >
+        Edgerouter X Interface switch0 Bytes Received
+
+    - name: switch0.receivePackets
+      type: float
+      description: >
+        Edgerouter X Interface switch0 Packets Received
+
+    - name: switch0.transmitBytes
+      type: float
+      description: >
+        Edgerouter X Interface switch0 Bytes Transmitted
+
+    - name: switch0.transmitPackets
+      type: float
+      description: >
+        Edgerouter X Interface switch0 Packets Transmitted

@@ -7,3 +7,4 @@
 /edgerouterbeat
 /edgerouterbeat.test
 *.pyc
+*.bak
