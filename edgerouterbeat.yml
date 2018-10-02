@@ -1,10 +1,3 @@
-################### Edgerouterbeat Configuration Example #########################
-
-############################# Edgerouterbeat ######################################
-
-edgerouterbeat:
-  # Defines how often an event is sent to the output
-  period: 15s
 
 #================================ General =====================================
 
@@ -26,7 +19,7 @@ edgerouterbeat:
 # These settings control loading the sample dashboards to the Kibana index. Loading
 # the dashboards is disabled by default and can be enabled either by setting the
 # options here, or by using the `-setup` CLI flag or the `setup` command.
-setup.dashboards.enabled: false
+#setup.dashboards.enabled: false
 
 # The URL from where to download the dashboards archive. By default this URL
 # has a value which is computed based on the Beat name and version. For released
@@ -44,7 +37,7 @@ setup.kibana:
   # Scheme and port can be left out and will be set to the default (http and 5601)
   # In case you specify and additional path, the scheme is required: http://localhost:5601/path
   # IPv6 addresses should always be defined as: https://[2001:db8::1]:5601
-  host: "192.168.0.214:5601"
+  #host: "localhost:5601"
 
 #============================= Elastic Cloud ==================================
 
@@ -66,13 +59,12 @@ setup.kibana:
 #-------------------------- Elasticsearch output ------------------------------
 output.elasticsearch:
   # Array of hosts to connect to.
-  hosts: ["192.168.0.214:9200"]
+  hosts: ["localhost:9200"]
 
   # Optional protocol and basic auth credentials.
   #protocol: "https"
-  username: "elastic"
-  #password: "Ndg=%BF7swB^D8Qlom5o"
-  password: "changeme"
+  #username: "elastic"
+  #password: "changeme"
 
 #----------------------------- Logstash output --------------------------------
 #output.logstash:
@@ -106,15 +98,11 @@ output.elasticsearch:
 # reporting is disabled by default.
 
 # Set to true to enable the monitoring reporter.
-xpack.monitoring.enabled: false
+#xpack.monitoring.enabled: false
 
 # Uncomment to send the metrics to Elasticsearch. Most settings from the
 # Elasticsearch output are accepted here as well. Any setting that is not set is
 # automatically inherited from the Elasticsearch output configuration, so if you
 # have the Elasticsearch output configured, you can simply uncomment the
 # following line.
-xpack.monitoring.elasticsearch:
-
-setup.template.json.enabled: true
-setup.template.json.path: "edgerouterbeat.template.json"
-setup.template.json.name: "edgerouter-template"
+#xpack.monitoring.elasticsearch:
